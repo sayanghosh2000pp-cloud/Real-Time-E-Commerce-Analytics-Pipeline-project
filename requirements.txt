@@ -1,0 +1,6 @@
+pyspark==3.4.1
+kafka-python==2.0.2
+pandas==2.1.0
+numpy==1.26.0
+pyyaml==6.0
+azure-storage-blob==12.25.0

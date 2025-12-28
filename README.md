@@ -1,26 +1,24 @@
-# Real-Time-E-Commerce-Analytics-Pipeline-project
-Real-Time E-Commerce Analytics Pipeline project
-RealTime_Ecommerce_Analytics/
-│
-├── README.md
-├── requirements.txt
-├── notebooks/
-│   ├── 01_data_ingestion_kafka.ipynb
-│   ├── 02_stream_processing_databricks.ipynb
-│   ├── 03_batch_etl_adf.ipynb
-│   └── 04_data_quality_checks.ipynb
-├── src/
-│   ├── kafka_producer.py
-│   ├── kafka_consumer.py
-│   ├── spark_streaming_job.py
-│   ├── batch_etl_job.py
-│   └── data_validation.py
-├── config/
-│   ├── kafka_config.yaml
-│   ├── databricks_config.json
-│   └── adf_config.json
-├── data/
-│   ├── raw/
-│   └── processed/
-└── dashboards/
-    └── powerbi_dashboard.pbix
+# Real-Time E-Commerce Analytics Pipeline on Azure
+
+## Project Overview
+Scalable end-to-end data pipeline for e-commerce transactions using **Azure Cloud**, **Kafka**, **Databricks**, and **ADF**.
+
+## Technologies Used
+Python, PySpark, Apache Kafka, Azure Data Factory, Azure Databricks, Azure Data Lake, Azure SQL, Power BI, Git, Unix Shell
+
+## Project Structure
+- src/: Python scripts (producer, consumer, streaming, batch, validation)
+- notebooks/: Jupyter notebooks
+- config/: configuration files
+- data/: raw and processed data
+- dashboards/: Power BI dashboards
+
+## How to Run
+1. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+2. Start Kafka broker and run producer.
+3. Execute Spark streaming job on Databricks.
+4. Orchestrate batch ETL via ADF.
+5. Visualize processed data in Power BI.
